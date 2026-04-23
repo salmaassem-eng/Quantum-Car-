@@ -55,15 +55,21 @@ The `CarFactory` is responsible for:
 
 ---
 
-🧪 Example Usage
+## 🧪 Example Usage
 
+```javascript
 const car = CarFactory.createCar("hybrid");
+
 car.start();
-car.accelerate(); // 20 → electric
-car.accelerate(); // 40 → electric
-car.accelerate(); // 60 → switches to gas
-car.brake();
-car.stop();
+
+car.accelerate(); // Speed: 20 → Electric engine
+car.accelerate(); // Speed: 40 → Electric engine
+car.accelerate(); // Speed: 60 → Switches to Gas engine
+
+car.brake();      // Speed: 40
+car.stop();       // Car stops completely
+
+---
 
 ## ▶️ How to Run
 
